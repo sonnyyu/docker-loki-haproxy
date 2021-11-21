@@ -3,6 +3,7 @@ version: "3"
 networks:
   loki:
     driver: bridge
+
 services:
   loki:
     image: grafana/loki:2.4.1
@@ -30,8 +31,13 @@ services:
     restart: unless-stopped
     expose:
       - 3000
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     networks:
       - loki
+  
   haproxy:
     image: haproxytech/haproxy-alpine:2.4
     container_name: haproxy
@@ -43,3 +49,5 @@ services:
     restart: unless-stopped
     networks:
       - loki
+volumes:
+    grafana_data: {}
