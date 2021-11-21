@@ -32,7 +32,7 @@ services:
     expose:
       - 3000
     volumes:
-      - grafana_data:/var/lib/grafana
+      - ./grafana/grafana_data:/var/lib/grafana
       - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     networks:
@@ -49,5 +49,5 @@ services:
     restart: unless-stopped
     networks:
       - loki
-volumes:
-    grafana_data: {}
+#volumes:
+#    grafana_data: {}
