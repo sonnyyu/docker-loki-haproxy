@@ -107,7 +107,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 2. Switch to directory
    ```sh
-   cd docker-pancgoth-stack
+   cd docker-loki-promtail-grafana-haproxy-stack
    ```
 3. Setup ownership as grafana
    ```sh
