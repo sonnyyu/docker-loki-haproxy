@@ -56,7 +56,7 @@
 
 ![Screenshot](resources/stacks.png)
 
-A monitoring solution for Docker hosts and containers with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor), [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).
+A monitoring solution for Docker hosts and containers with [loki](https://grafana.com/oss/loki/), [Grafana](http://grafana.org/), [promtail](https://grafana.com/docs/loki/latest/clients/promtail/), [haproxy](http://www.haproxy.org).
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
