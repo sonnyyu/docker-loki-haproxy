@@ -103,11 +103,11 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sonnyyu/docker-loki-promtail-grafana-haproxy-stack
+   git clone https://github.com/sonnyyu/docker-loki
    ```
 2. Switch to directory
    ```sh
-   cd docker-loki-promtail-grafana-haproxy-stack
+   cd docker-loki
    ```
 3. Setup ownership as grafana
    ```sh
